@@ -40,7 +40,7 @@
 <body>
     <fieldset>
 
-    <center><h2>Event Registration Form</h2></center>
+    <center><h2><u>Event Registration Form</u></h2></center>
     <form action="/submit-event-registration" method="POST">
         <!-- Personal Information -->
         <label for="fullName">Full Name:</label>
@@ -60,7 +60,21 @@
             <option value="conference">Conference</option>
             <option value="webinar">Webinar</option>
         </select>
-
+        <!-- Are you a -->
+         <label for="Are you a">Are you a:</label>
+         <select id="Are you a" name="Are you a" required>
+            <option value="">--Choose Option--</option>
+            <option value="DayScholar">DayScholar</option>
+            <option value="Hosteller">Hosteller</option>
+         </select>
+         <!-- Team size -->
+         <label for="Enter your team size">Enter your team size:</label>
+         <select id="Enter your team size" name="Enter your team size" required>
+            <option value="">--Choose Option--</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+         </select>
+        
         <label for="tickets">Number of Tickets:</label>
         <input type="number" id="tickets" name="tickets" min="1" placeholder="Enter number of tickets" required>
 
