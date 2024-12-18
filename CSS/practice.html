@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external css file -->
+    <link rel="stylesheet" href="day5.css">
+    <style>
+        /* universal selector
+        /* it used to target whole document in on go  */
+        *{
+            color:blue;
+            font-style:normal;
+            text-align:center;
+            text-transform:uppercase;
+        }
+         /* Type selector to target similar kind oftag or element*/
+         h1{
+            color:aquamarine;
+         }
+        #heading1{
+            color:green;
+            font-style:italic;
+         }
+         p{
+            color:brown;
+            font-style:italic;
+            text-align:center;
+         }
+         #heading2
+         {
+            color:blueviolet;
+         }
+         .para{
+        color:black;
+        font-weight: bolder;
+        font-size: 45px;
+    } */
+    
+    <!-- adjacent sibbling seelector -->
+    h1+p{
+        color: red;
+    }
+    /* adjacent general selector */
+    /* h1 ~ p{
+        color:chartreuse;
+    } */
+     h1:hover{
+        color:red;
+        font-style:italic;
+     }
+     button{
+        padding: 7px 35px;
+        background-color:green;
+        border:1px solid black;
+        border-radius:12px;
+     }
+     button:hover{
+        background-color:red;
+        cursor:pointer;
+        border:none;
+        border-radius:0px;
+        padding: 15px 60px;
+     }
+     a:hover{
+        background:yellow;
+     }
+     a:active{
+        color:red;
+     }
+     a:visited{
+        color:green;
+     }
+     [placeholder]
+     {
+        color:red;
+        border:2px solid greenyellow;
+     }
+     input[type="text"]
+     {
+        padding:10px 20px;
+     }
+     li:nth-child(even){
+        color:red;
+    }
+    
+</style>
+</head>
+<body>
+    <!-- this is a heading 1 this is a selector
+     <h1 style="color:orangered">hema</h1>
+    <h1 id="heading1">Kussu</h1>
+     group selector 
+    <h2>This is second paragraph</h2>
+    <h3>This is third paragraph</h3>
+    <h4>nitya</h4>
+    <h5 id="heading3">ammu</h5>
+    <p class="para">pavani</p>
+    child selector 
+    <div>
+        <p>this is a direct child we will target</p> 
+    </div>
+    <div>
+        <p>this is nested child of div</p>
+    </div> -->
+    <h1>heading1</h1>
+    <p>paragraph1</p>
+    <p>paragraph2</p>
+    <p>paragraph3</p>
+    <button>Submit</button>
+    <a href="https://www.adityatekkali.edu.in/">aitam link</a>
+    <!-- attribute selector -->
+    <input type="text" placeholder="Enter your name">
+    <form>
+        <input type="text" placeholder="text enter">
+        <input type="password" placeholder="enter password">
+    </form>
+</body>
+</html>
